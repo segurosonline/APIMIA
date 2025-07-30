@@ -76,7 +76,7 @@ module.exports = async (req, res) => {
     // Configurar los encabezados CORS
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Request-ID, X-Timestamp');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     
     // Manejar preflight OPTIONS
     if (req.method === 'OPTIONS') {
